@@ -1,0 +1,208 @@
+body {
+  font-family: "lato", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
+}
+.metals {
+
+}
+.nonmetals {
+
+}
+.metals span {
+
+}
+.nonmetals span {
+}
+.toprow {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  left: 0;
+  font-family: arial;
+}
+.navitem {
+  height: 16px;
+  width: 42px;
+  display: inline-block;
+}
+.navitem:hover {
+    filter: brightness(85%);
+}
+.types {
+  display: flex;
+justify-content: center;
+position: absolute;
+right: 0;
+left: 0;
+top: 50px;
+z-index: 1;
+font-family: arial;
+justify-content: space-between;
+width: 100%;
+margin: auto;
+max-width: 1240px;
+}
+.types div {
+    text-align: center;
+    padding: 5.5px 0px;
+    box-sizing: border-box;
+    position: relative;
+    border: 2px solid black;
+    border-top: 0px;
+    justify-content: center;
+    display: flex;
+}
+.array {
+  box-sizing: border-box;
+  padding: 20px
+}
+div {
+  display: block;
+}
+
+.period {
+    display: block;
+    clear: both;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+}
+#one .group:first-child, #one .group:last-child {
+    z-index: 2;
+    position: relative;
+}
+.period:first-of-type .group:first-of-type {
+    transform-origin: left top;
+}
+.group {
+    max-width: 107px;
+    min-height: 103px;
+    max-height: 103px;
+    border-collapse: collapse;
+    border: 1px solid white;
+    float: left;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 10px;
+    font-family: arial;
+    width: 7%;
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: .7s;
+    transform-origin: center;
+    box-shadow: none;
+    overflow: hidden;
+}
+.group:hover {
+    transform: scale(1.25);
+    z-index: 3;
+    filter: brightness(85%);
+}
+empty:not(:focus) {
+    border:none;
+}
+.empty:hover {
+    transform: none;
+    border:none;
+}
+/*
+.group:before {
+    content: "";
+    border-left: 0px solid transparent;
+    border-bottom: 100px solid rgba(0,0,0,0.1);
+    border-right: 50px solid transparent;
+    border-top: 0px solid transparent;
+    z-index: 0;
+    position: absolute;
+    left: -100px;
+    top: 0px;
+    width: auto;
+    height: auto;
+    padding-left: 50px;
+    transition: .3s;
+}
+*/
+.atomic-orbital-shells {
+    float: right;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    flex: 0;
+    position: absolute;
+    right: 10px;
+}
+.atomic-number {
+    font-size: 15px;
+}
+.element-symbol {
+    font-size: 1.5em;
+}
+.break {
+    height: 30px;
+}
+.element-name, .atomic-mass {
+    font-size: 11px;
+    flex: 1 1;
+    align-items: flex-end;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    display: inline-block;
+    max-width: 85%;
+}
+.other-nonmetals {
+  background-color: #76ff03;
+}
+
+.noble-gases {
+  background-color: #df5ff5;
+}
+
+.halogens {
+  background-color: #18ffff;
+}
+
+.metalloids {
+  background-color: #00e676;
+}
+
+.alkaline-earth-metals {
+  background-color: #eaea18;
+}
+
+.alkali-metals {
+  background-color: #f7a91d;
+}
+
+.transition-metals {
+  background-color: #ff3e7f;
+}
+
+.post-transition-metals {
+  background-color: #40c4ff
+}
+
+.lanthanoids {
+  background-color: #fd6235;
+}
+
+.actinoids {
+  background-color: #ff1744;
+}
+
+.footer {
+    background-color: lightgray;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    text-align: center;
+}
+.footer span {
+    font-size: 13px;
+    vertical-align: middle;
+    display: inline-block;
+    line-height: normal;
+    color: gray;
+}
