@@ -1,47 +1,71 @@
 body {
-  font-family: "lato", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
+    font-family: "lato", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
 }
+
 .metals {
-
+    position: absolute;
+    left: 26px;
+    width: 274px;
 }
+
 .nonmetals {
-
+    position: absolute;
+    right: 26px;
+    width: 136px;
 }
-.metals span {
 
-}
+.metals span,
 .nonmetals span {
+    position: absolute;
+    background: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: white;
 }
+
+
+/*
+.nonmetals span {
+    background: white;
+    position: absolute;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+*/
+
 .toprow {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  right: 0;
-  left: 0;
-  font-family: arial;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    left: 0;
+    font-family: arial;
 }
+
 .navitem {
-  height: 16px;
-  width: 42px;
-  display: inline-block;
+    height: 16px;
+    width: 42px;
+    display: inline-block;
 }
+
 .navitem:hover {
     filter: brightness(85%);
+    transform: scale(1.2);
+    transform-origin: top;
 }
+
 .types {
-  display: flex;
-justify-content: center;
-position: absolute;
-right: 0;
-left: 0;
-top: 50px;
-z-index: 1;
-font-family: arial;
-justify-content: space-between;
-width: 100%;
-margin: auto;
-max-width: 1240px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    left: 0;
+    font-family: arial;
+    z-index: 1;
+    top: 23px;
+    height: 17px;
 }
+
 .types div {
     text-align: center;
     padding: 5.5px 0px;
@@ -52,12 +76,14 @@ max-width: 1240px;
     justify-content: center;
     display: flex;
 }
+
 .array {
-  box-sizing: border-box;
-  padding: 20px
+    box-sizing: border-box;
+    padding: 20px
 }
+
 div {
-  display: block;
+    display: block;
 }
 
 .period {
@@ -67,13 +93,17 @@ div {
     justify-content: space-around;
     align-items: stretch;
 }
-#one .group:first-child, #one .group:last-child {
+
+#one .group:first-child,
+#one .group:last-child {
     z-index: 2;
     position: relative;
 }
+
 .period:first-of-type .group:first-of-type {
     transform-origin: left top;
 }
+
 .group {
     max-width: 107px;
     min-height: 103px;
@@ -84,29 +114,35 @@ div {
     display: inline-block;
     box-sizing: border-box;
     padding: 10px;
+    transition: .5s;
     font-family: arial;
     width: 7%;
     flex: 1 1;
     display: flex;
     flex-direction: column;
     position: relative;
-    transition: .7s;
     transform-origin: center;
     box-shadow: none;
     overflow: hidden;
 }
+
 .group:hover {
     transform: scale(1.25);
     z-index: 3;
     filter: brightness(85%);
 }
+
 empty:not(:focus) {
-    border:none;
+    border: none;
 }
+
 .empty:hover {
     transform: none;
-    border:none;
+    border: none;
+    border-color: transparent;
 }
+
+
 /*
 .group:before {
     content: "";
@@ -124,6 +160,7 @@ empty:not(:focus) {
     transition: .3s;
 }
 */
+
 .atomic-orbital-shells {
     float: right;
     font-size: 10px;
@@ -133,16 +170,21 @@ empty:not(:focus) {
     position: absolute;
     right: 10px;
 }
+
 .atomic-number {
     font-size: 15px;
 }
+
 .element-symbol {
     font-size: 1.5em;
 }
+
 .break {
     height: 30px;
 }
-.element-name, .atomic-mass {
+
+.element-name,
+.atomic-mass {
     font-size: 11px;
     flex: 1 1;
     align-items: flex-end;
@@ -152,46 +194,50 @@ empty:not(:focus) {
     display: inline-block;
     max-width: 85%;
 }
+
 .other-nonmetals {
-  background-color: #76ff03;
+    background-color: #76ff03;
 }
 
 .noble-gases {
-  background-color: #df5ff5;
+    background-color: #df5ff5;
 }
-
 .halogens {
-  background-color: #18ffff;
+    background-color: #18ffff;
 }
 
 .metalloids {
-  background-color: #00e676;
+    background-color: #00e676;
 }
 
 .alkaline-earth-metals {
-  background-color: #eaea18;
+    background-color: #eaea18;
 }
 
 .alkali-metals {
-  background-color: #f7a91d;
+    background-color: #f7a91d;
 }
 
 .transition-metals {
-  background-color: #ff3e7f;
+    background-color: #ff3e7f;
 }
 
 .post-transition-metals {
-  background-color: #40c4ff
+    background-color: #40c4ff
 }
 
 .lanthanoids {
-  background-color: #fd6235;
+    background-color: #fd6235;
 }
 
 .actinoids {
-  background-color: #ff1744;
+    background-color: #ff1744;
 }
 
+.not-selected {
+    background-color: lightgray;
+    color: darkgray;
+}
 .footer {
     background-color: lightgray;
     height: 40px;
@@ -199,6 +245,7 @@ empty:not(:focus) {
     width: 100%;
     text-align: center;
 }
+
 .footer span {
     font-size: 13px;
     vertical-align: middle;
